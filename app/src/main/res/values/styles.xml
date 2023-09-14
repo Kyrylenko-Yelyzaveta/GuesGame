@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="baseText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">40sp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:fontFamily">@font/truecrimes</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="image_view_base">
+        <item name="android:layout_width">80dp</item>
+        <item name="android:contentDescription">@string/chance</item>
+        <item name="android:layout_height">80dp</item>
+    </style>
+</resources>

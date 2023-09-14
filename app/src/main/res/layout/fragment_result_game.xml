@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/back"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.screens.ResultGameFragment">
+
+    <TextView
+        android:id="@+id/txtResultOfGame"
+        style="@style/baseText"
+        android:text="@string/the_outcome_of_the_game_is_known"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.136" />
+
+    <TextView
+        android:id="@+id/txtValueOfResult"
+        style="@style/baseText"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="136dp"
+        android:text="@string/you_won_the_number_was_5"
+        android:textColor="@color/white"
+        android:textSize="70sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtResultOfGame" />
+
+    <ImageButton
+        android:id="@+id/btTryAgain"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/button_bck"
+        android:contentDescription="@string/startDesc"
+        android:text="@string/startGame"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/txtResultOfGame"
+        app:layout_constraintTop_toBottomOf="@+id/txtValueOfResult"
+        app:layout_constraintVertical_bias="0.142" />
+
+    <TextView
+        style="@style/baseText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/try_again"
+        app:layout_constraintBottom_toBottomOf="@+id/btTryAgain"
+        app:layout_constraintEnd_toEndOf="@+id/btTryAgain"
+        app:layout_constraintStart_toStartOf="@+id/btTryAgain"
+        app:layout_constraintTop_toTopOf="@+id/btTryAgain" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

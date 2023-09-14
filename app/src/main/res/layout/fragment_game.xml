@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/back"
+    android:layout_height="match_parent"
+    tools:context=".ui.screens.GameFragment">
+
+
+    <TextView
+        android:id="@+id/txtTaskGame"
+        style="@style/baseText"
+        android:gravity="center"
+        android:layout_marginTop="200dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/guess_a_number_from_1_to_100"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edTxtAction"
+        android:layout_margin="40dp"
+        android:background="@drawable/edit_bck"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:inputType="number"
+        android:hint="@string/write_number_without_space"
+        android:textColorHint="@color/black"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/txtTaskGame"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTaskGame" />
+
+    <ImageButton
+        android:id="@+id/btnConfirmAnswer"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/button_bck"
+        android:contentDescription="@string/startDesc"
+        android:text="@string/startGame"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/edTxtAction"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="@+id/edTxtAction"
+        app:layout_constraintTop_toBottomOf="@+id/edTxtAction"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <TextView
+        style="@style/baseText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/confirm"
+        app:layout_constraintBottom_toBottomOf="@+id/btnConfirmAnswer"
+        app:layout_constraintEnd_toEndOf="@+id/btnConfirmAnswer"
+        app:layout_constraintStart_toStartOf="@+id/btnConfirmAnswer"
+        app:layout_constraintTop_toTopOf="@+id/btnConfirmAnswer" />
+
+    <ImageView
+        android:id="@+id/fifthItem"
+        android:src="@drawable/one"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        style="@style/image_view_base" />
+
+
+    <ImageView
+        android:id="@+id/fourthItem"
+        style="@style/image_view_base"
+        android:src="@drawable/one"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/fifthItem"
+        app:layout_constraintTop_toTopOf="@+id/fifthItem" />
+
+    <ImageView
+        android:id="@+id/thirdItem"
+        style="@style/image_view_base"
+        android:src="@drawable/one"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/fourthItem"
+        app:layout_constraintTop_toTopOf="@+id/fourthItem"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <ImageView
+        android:id="@+id/secondItem"
+        style="@style/image_view_base"
+        android:src="@drawable/one"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/thirdItem"
+        app:layout_constraintTop_toTopOf="@+id/thirdItem"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/firstItem"
+        style="@style/image_view_base"
+        android:src="@drawable/one"
+        app:layout_constraintBottom_toBottomOf="@+id/secondItem"
+        app:layout_constraintStart_toEndOf="@+id/secondItem"
+        app:layout_constraintTop_toTopOf="@+id/secondItem"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView"
+        style="@style/baseText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/you_have_left"
+        app:layout_constraintBottom_toTopOf="@+id/thirdItem"
+        app:layout_constraintEnd_toEndOf="@+id/firstItem"
+        app:layout_constraintStart_toStartOf="@+id/fifthItem" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

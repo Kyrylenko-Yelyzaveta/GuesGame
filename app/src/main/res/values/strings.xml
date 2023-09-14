@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">GuesGame</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="welcome_to_this_amazing_game">Welcome to this amazing game!</string>
+    <string name="startGame">Start Game</string>
+    <string name="startDesc">StartGame</string>
+    <string name="you_have_left">You have left:</string>
+    <string name="guess_a_number_from_1_to_100">Guess a number from 1 to 100</string>
+    <string name="chance">CHANCE</string>
+    <string name="write_number_without_space">Write number without space</string>
+    <string name="the_outcome_of_the_game_is_known">The outcome of the game is known</string>
+    <string name="try_again">Try Again</string>
+    <string name="you_won_the_number_was_5">You won, the number was 5</string>
+    <string name="confirm">Confirm</string>
+</resources>
